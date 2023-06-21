@@ -27,3 +27,7 @@ app.set("view engine", "ejs")
      app.use('/css', express.static(path.resolve(__dirname, "assets/css")))
      app.use('/img', express.static(path.resolve(__dirname, "assets/img")))
      app.use('/js', express.static(path.resolve(__dirname, "assets/js")))
+
+     app.use('/', require('./server/routes/router'))
+
+app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)});
