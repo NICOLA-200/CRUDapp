@@ -27,3 +27,25 @@ a {
     font-size: 1.5em;
     font-weight: bold;
 }
+.d-flex{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .justify-between{
+     justify-content: space-between;
+ }
+ 
+ .text-center{
+     text-align: center;
+ }
+ 
+ .border-shadow{
+     border: 1px solid var(--border-btn);
+     box-shadow: 1px 3px 10px #e9ecef;
+ }
+ 
+ .text-dark{
+     color: white;
+ }
+ 
