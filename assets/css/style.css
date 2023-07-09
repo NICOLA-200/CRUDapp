@@ -90,4 +90,81 @@ a {
      width: 100%;
  }
  
+ .table td, .table th{
+     padding: .75em;
+     vertical-align: top;
+     text-align: center;
+     border-top: 1px solid var(--border);
+ }
+ 
+ .table td > a.btn{
+     padding: .3em 1em;
+     font-size: 1.1em;
+     margin: 0 .2em;
+ }
+ 
+ .table tr:hover{
+     background-color:#0686d6d8 ;
+     color: white;
+ }
+ 
+ .table tr:hover td > a{
+     box-shadow: none;
+ }
+ 
+ .table .thead-dark th{
+     color: #fff;
+     background-color: var(--dark) ;
+     border-color: #32383e;
+ }
+ 
+ @media only screen and (max-width: 1024px){
+     table, thead, tbody, th, td, tr{
+         display: block;
+     }
+ 
+     thead tr{
+         position: absolute;
+         top: -9999px;
+         left: -9999px;
+     }
+ 
+     tr { border: 1px solid var(--border);}
+ 
+     td{
+         border: none;
+         position: relative;
+     }
+ 
+ }
+ 
+ /*  add user & update user template */
+ .form-title{
+     margin-top: 2em;
+ }
+ 
+ .form-title > h2{
+     padding: .5em 0;
+ }
+ 
+ .new_user{
+     max-width: 786px;
+     margin: auto;
+ }
+ 
+ #update_user .form-group,
+ #add_user .form-group{
+     margin: .4em 0;
+ }
+ 
+ #update_user .form-group input[type="text"],
+ #add_user .form-group input[type="text"]{
+     width: 100%;
+     padding: .6em 1em;
+     margin: .5em 0;
+     border: 1px solid var(--border);
+     font-family: 'Barlow', sans-serif;
+     font-size: 1em;
+     border-radius: .2em;
+ }
  
