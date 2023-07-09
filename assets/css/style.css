@@ -48,4 +48,46 @@ a {
  .text-dark{
      color: white;
  }
+ .inline{
+     display: inline-block;
+ }
+ 
+ .text-light{
+     color: var(--light);
+ }
+ 
+ .text-gradient{
+     background: linear-gradient(to right, #662de2, #4a00e0);
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     color: white;
+ }
+ 
+ #header nav{
+     color: white;
+     background-color: #0633d6;
+     padding: 1em 0;
+     width: 100%;
+ }
+ 
+ #site-main{
+     margin-top: 6em;
+     font-family: 'Barlow', sans-serif;
+ }
+ 
+ #site-main .container .box-nav > a{
+     font-size: 1em;
+     padding: .5em 1em;
+ }
+ 
+ #site-main .container form{
+     margin: 2em 0;
+ }
+ 
+ table{
+     border-spacing: 0px;
+     width: 100%;
+ }
+ 
  
