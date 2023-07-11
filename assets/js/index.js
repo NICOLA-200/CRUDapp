@@ -14,3 +14,14 @@ $("#add_user").submit(function(event){
      $.map(unindexed_array, function(n, i){
          data[n['name']] = n['value']
      })
+     var request = {
+          "url" : `http://localhost:8080/api/users/${data.id}`,
+          "method" : "PUT",
+          "data" : data
+      }
+  
+      $.ajax(request).done(function(response){
+          alert("Data Updated Successfully!");
+      })
+  
+  })
